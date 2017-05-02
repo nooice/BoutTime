@@ -14,6 +14,8 @@
 		BD411AE21EB82C2600D601ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD411AE01EB82C2600D601ED /* LaunchScreen.storyboard */; };
 		BD411AED1EB82C2600D601ED /* BoutTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD411AEC1EB82C2600D601ED /* BoutTimeTests.swift */; };
 		BD411AF81EB82C2600D601ED /* BoutTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD411AF71EB82C2600D601ED /* BoutTimeUITests.swift */; };
+		BD411B401EB8422900D601ED /* PlayAgainControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD411B3F1EB8422900D601ED /* PlayAgainControllerViewController.swift */; };
+		BD411B421EB84F3E00D601ED /* FactFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD411B411EB84F3E00D601ED /* FactFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		BD411AF31EB82C2600D601ED /* BoutTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoutTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD411AF71EB82C2600D601ED /* BoutTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutTimeUITests.swift; sourceTree = "<group>"; };
 		BD411AF91EB82C2600D601ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD411B3F1EB8422900D601ED /* PlayAgainControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayAgainControllerViewController.swift; sourceTree = "<group>"; };
+		BD411B411EB84F3E00D601ED /* FactFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				BD411AD71EB82C2600D601ED /* AppDelegate.swift */,
+				BD411B3F1EB8422900D601ED /* PlayAgainControllerViewController.swift */,
 				BD411AD91EB82C2600D601ED /* ViewController.swift */,
 				BD411ADB1EB82C2600D601ED /* Main.storyboard */,
 				BD411ADE1EB82C2600D601ED /* Assets.xcassets */,
 				BD411AE01EB82C2600D601ED /* LaunchScreen.storyboard */,
+				BD411B411EB84F3E00D601ED /* FactFile.swift */,
 				BD411AE31EB82C2600D601ED /* Info.plist */,
 			);
 			path = BoutTime;
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD411B401EB8422900D601ED /* PlayAgainControllerViewController.swift in Sources */,
 				BD411ADA1EB82C2600D601ED /* ViewController.swift in Sources */,
 				BD411AD81EB82C2600D601ED /* AppDelegate.swift in Sources */,
+				BD411B421EB84F3E00D601ED /* FactFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +524,7 @@
 				BD411AFE1EB82C2600D601ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD411AFF1EB82C2600D601ED /* Build configuration list for PBXNativeTarget "BoutTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +533,7 @@
 				BD411B011EB82C2600D601ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD411B021EB82C2600D601ED /* Build configuration list for PBXNativeTarget "BoutTimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +542,7 @@
 				BD411B041EB82C2600D601ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
