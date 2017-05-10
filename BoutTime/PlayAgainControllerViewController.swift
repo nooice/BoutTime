@@ -10,9 +10,12 @@ import UIKit
 
 class PlayAgainControllerViewController: UIViewController {
 
+    @IBOutlet weak var playAgainButton: UIButton!
+    @IBOutlet weak var scoreBoard: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        postScore()
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +24,13 @@ class PlayAgainControllerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func postScore() {
+        scoreBoard.text = "I dont know how this works yet"
+    }
 
+    @IBAction func dismiss(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
