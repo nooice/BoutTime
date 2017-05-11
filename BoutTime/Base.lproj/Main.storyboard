@@ -224,17 +224,18 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxH-N4-TL2">
                                                                 <rect key="frame" x="143" y="0.0" width="88" height="33"/>
-                                                                <state key="normal" title="Check Score"/>
+                                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" title="Check Score">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
                                                                 <connections>
-                                                                    <segue destination="Ioz-mg-mah" kind="popoverPresentation" popoverAnchorView="CxH-N4-TL2" id="MZn-NC-UUA">
-                                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                                                    </segue>
+                                                                    <action selector="ShowScore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jSK-1l-Dxz"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlu-PF-FLb">
-                                                                <rect key="frame" x="154.66666666666666" y="33" width="65" height="32.666666666666629"/>
+                                                                <rect key="frame" x="168.33333333333334" y="33" width="37.333333333333314" height="32.666666666666629"/>
                                                                 <attributedString key="attributedText">
-                                                                    <fragment content="0:59">
+                                                                    <fragment content="60">
                                                                         <attributes>
                                                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <font key="NSFont" size="30" name="Futura-Medium"/>
@@ -315,6 +316,7 @@
                         <outlet property="thirdButtonUp" destination="CQ0-zq-yC8" id="ied-sU-Z6w"/>
                         <outlet property="timerLabel" destination="Xlu-PF-FLb" id="oJK-gn-GHG"/>
                         <outlet property="topDownButton" destination="q4N-pz-NhW" id="xkv-jQ-gc0"/>
+                        <segue destination="Ioz-mg-mah" kind="show" identifier="showScore" id="fgP-bT-dz3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -324,7 +326,7 @@
         <!--Play Again Controller View Controller-->
         <scene sceneID="3kB-4H-qxH">
             <objects>
-                <viewController id="Ioz-mg-mah" customClass="PlayAgainControllerViewController" customModule="BoutTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayAgainControllerViewController" id="Ioz-mg-mah" customClass="PlayAgainControllerViewController" customModule="BoutTime" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5FD-5L-RUR"/>
                         <viewControllerLayoutGuide type="bottom" id="BQ9-7Q-WFv"/>
@@ -403,7 +405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Uc-W7-4BD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="139"/>
+            <point key="canvasLocation" x="919" y="139"/>
         </scene>
     </scenes>
     <resources>

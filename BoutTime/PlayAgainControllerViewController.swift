@@ -9,6 +9,7 @@
 import UIKit
 
 class PlayAgainControllerViewController: UIViewController {
+    var stringPassed = ""
 
     @IBOutlet weak var playAgainButton: UIButton!
     @IBOutlet weak var scoreBoard: UILabel!
@@ -25,7 +26,8 @@ class PlayAgainControllerViewController: UIViewController {
     }
     
     func postScore() {
-        scoreBoard.text = "I dont know how this works yet"
+        scoreBoard.text = "\(stringPassed)/6"
+        
     }
 
     @IBAction func dismiss(_ sender: Any) {

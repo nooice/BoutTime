@@ -136,3 +136,15 @@ class listOfFacts: Listable {
         return listItems[selection[number]]
     }
 }
+
+struct scoreKeeper {
+    var score = 0
+    mutating func setScore(score number: Int) {
+        score = number
+    }
+    func getScore() -> Int{
+        return score
+    }
+}
+
+
